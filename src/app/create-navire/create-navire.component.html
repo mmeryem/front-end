@@ -1,0 +1,125 @@
+<div class="logo text-center">   
+</div>
+<div class="navire-form m-3 p-4">
+    <form [formGroup]="navireForm">
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Nom Navire</mat-label>
+                    <input FormControlName="Nomnavire"matInput placeholder="Nomnavire">            
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Code Navire</mat-label>
+                <input FormControlName="Codenavire" matInput placeholder="Codenavire">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Call SIGN</mat-label>
+                    <input FormControlName="Callsign" matInput placeholder="Callsign">            
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Nombre de gures à bord</mat-label>
+                <input FormControlName="Nombredeguresabord" matInput placeholder="Nombredeguresabord">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>N LLOYD</mat-label>
+                   <input FormControlName="Nlloyd" matInput placeholder="Nlloyd">
+            
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Vitesse</mat-label>
+                <input FormControlName="Vitesse" matInput placeholder="Vitesse">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Jauge brute</mat-label>
+                    <input FormControlName="Jaugebrute" matInput placeholder="Jaugebrute">
+            
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Type</mat-label>
+                <input FormControlName="Type" matInput placeholder="Type">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Jauge nette</mat-label>
+                    <input FormControlName="Jaugenette" matInput placeholder="Jaugenette">           
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Année de construction</mat-label>
+                <input matInput placeholder="Anneedeconstruction">
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Tonnage port en lourd</mat-label>
+                    <input FormControlName="Tonnageportenlourd" matInput placeholder="Tonnageportenlourd">            
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Armateur</mat-label>
+                <input FormControlName="Armateur" matInput placeholder="Armateur">
+                <mat-icon matSuffix>search</mat-icon>
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Tirant d'eau</mat-label>
+                    <input FormControlName="TirantdEau" matInput placeholder="TirantdEau">            
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6 mt-4">
+              <mat-form-field appearance="outline">
+                <mat-label>Consignataire</mat-label>
+                <input FormControlName="Consignataire" matInput placeholder="Consignataire">
+                <mat-icon matSuffix>search</mat-icon>
+              </mat-form-field>
+            </div>
+            <div class="col-md-6 mt-3">
+              <section class="example-section" [formGroup]="toppings">
+                <h4>Navire Régulier ?</h4>
+                <p><mat-checkbox formControlName="oui">oui</mat-checkbox></p>
+              </section>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Ligne maritime</mat-label>
+                <input FormControlName="Lignemaritime" matInput placeholder="Lignemaritime">
+                <mat-icon matSuffix>search</mat-icon>
+              </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Port d'attache</mat-label>
+                    <input FormControlName="PortdAttache" matInput placeholder="PortdAttache">
+                    <mat-icon matSuffix>search</mat-icon>            
+                  </mat-form-field>
+            </div>
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Pavillon</mat-label>
+                <input FormControlName="Pavillon" matInput placeholder="Pavillon">
+                <mat-icon matSuffix>search</mat-icon>
+              </mat-form-field>
+            </div>            
+          </div>
+          <button (click)="Enregistrer()" classe="mt-4" mat-raised-button color="primary">Enregistrer</button>
+        </form>
+
+</div>
